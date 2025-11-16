@@ -1,1 +1,67 @@
 HW for week 8
+(env1) C:\Users\ByeonSoYun\3-2AI\3-2AI\week8>python reg.py
+Using device: cuda
+
+원본 데이터 처음 5줄:
+   Age       Premium
+0   18  10745.071230
+1   19  10312.603548
+2   20  12011.532807
+3   21  13844.544785
+4   22  11728.769938
+
+데이터 타입 확인:
+Age          int64
+Premium    float64
+dtype: object
+
+훈련 데이터 크기: 40개
+테스트 데이터 크기: 10개
+✓ Age 특성 정규화 완료.
+✓ Premium 타겟 정규화 완료.
+
+--- Training Start ---
+Traceback (most recent call last):
+  File "C:\Users\ByeonSoYun\3-2AI\3-2AI\week8\reg.py", line 100, in <module>
+    for X_batch, y_batch in train_loader:
+NameError: name 'train_loader' is not defined. Did you mean: 'train_losses'?
+
+(env1) C:\Users\ByeonSoYun\3-2AI\3-2AI\week8>python reg.py
+Using device: cuda
+
+원본 데이터 처음 5줄:
+   Age       Premium
+0   18  10745.071230
+1   19  10312.603548
+2   20  12011.532807
+3   21  13844.544785
+4   22  11728.769938
+
+데이터 타입 확인:
+Age          int64
+Premium    float64
+dtype: object
+
+훈련 데이터 크기: 40개
+테스트 데이터 크기: 10개
+✓ Age 특성 정규화 완료.
+✓ Premium 타겟 정규화 완료.
+
+--- Training Start ---
+Epoch [20/200] | Train Loss: 0.17 | Test Loss: 0.16
+Epoch [40/200] | Train Loss: 0.04 | Test Loss: 0.04
+Epoch [60/200] | Train Loss: 0.03 | Test Loss: 0.03
+Epoch [80/200] | Train Loss: 0.03 | Test Loss: 0.02
+Epoch [100/200] | Train Loss: 0.03 | Test Loss: 0.02
+Epoch [120/200] | Train Loss: 0.03 | Test Loss: 0.02
+Epoch [140/200] | Train Loss: 0.03 | Test Loss: 0.02
+Epoch [160/200] | Train Loss: 0.03 | Test Loss: 0.02
+Epoch [180/200] | Train Loss: 0.03 | Test Loss: 0.03
+Epoch [200/200] | Train Loss: 0.03 | Test Loss: 0.02
+--- Training Complete! ---
+
+==== Model Performance ====
+Mean Squared Error (MSE):  0.03
+Root Mean Squared Error (RMSE): 0.17
+R² Score: 0.9624
+===========================
